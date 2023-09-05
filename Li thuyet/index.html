@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        OOP: lập trình hướng đối tượng
+        4 tính chất:
+        + đóng gói 
+        + kế thừa
+        + trừu tượng 
+        + đa hình 
+         Object - đối tượng 
+        gồm thuộc tính ( property ) và phương thức ( method )
+        object: kiểu dữ liệu phức tạp - reference type - kiểu tham chiếu
+        các cách để khởi tạo đối tượng :
+        Cách 1: let, const, var
+        Cách 2: function
+        Cách 3: class 
+        object chứa các cặp key( thuộc tính ) và value
+        các cặp key và value ngăn cách nhau bởi dấu phẩy
+        *********************
+        CRUD với object:
+        C: create
+        để thêm thuộc tính cho đối tượng thì đối tượng.thuộc tính=giá trị
+        R: Read đọc
+        for-in: trả về tên các key
+        U: Update là đối tượng.thuộc tính = giá trị 
+        D: Delete là đối tượng.thuộc tính
+        ******************
+        Phương thức về mảng ( method ):
+        - filter là 1 callback, lọc ra phần tử - vị trí- cả mảng gốc
+        - map
+        -reducer
+        - forEach
+        - find
+        - some
+        - every
+
+    -->
+    <script>
+        /*      let student = {
+                 name: "Nhất",
+                 age: 25,
+                 abc: 6
+             }
+             console.log(student.name);
+             student.address = "Hải Dương"
+             student.sex = "Male"
+             student["ngủ"]="12h"
+             console.log(student);
+             for (const abc in student) {
+                 if (student[abc] == "Hải Dương") {
+                     console.log(abc);
+                 }
+             } */
+        /* let arr=[7,8,9];
+        for (const key in arr) {
+        console.log(arr[key]);
+        } */
+        /* delete student.age;
+        console.log(student); */
+        /// Khởi tạo đối tượng dùng function
+        /* let st1={
+          name:"hoa",
+          id:"001"
+        }
+        let st2={
+          name:"hồng",
+          id:"002"
+        } */
+        /* function STUDENT(name, age) {
+            this.A = name;
+            this.B = age;
+
+        }
+        let st1 = new STUDENT ("Hoa", 25);
+        let st2 = new STUDENT ("Hồng",18);
+        console.log(st1);
+        console.log(st2); */
+        /* let a=6;
+        let b=a;
+        a=9;
+        console.log(b);
+        let arr1={
+            name:"hoa"
+        }
+        let arr2=arr1;
+        arr1.name="hiếu"
+        console.log(arr2); */
+        /*
+        Các cách clone object 
+        DEEP CLONE && SHALLOW CLONE
+        Shallow clone ( clone nông )
+        1. toán tử Spread 
+        *****
+        let obj1 ={
+            name:"Hoa"
+        }
+        let obj2={...obj1};
+        obj1.name="Tươi"
+        console.log(obj2);
+        *****
+        let obj1 ={
+        name:"Hoa ",
+        infor:{
+            address:"Hà Nội"
+        }
+       }
+       let obj2={...obj1};
+       bj1.name="Tươi";
+       obj1.address="Hồ Chí Minh"
+       console.log(obj2.name);
+       console.log(obj2.infor.address);
+       *****
+        
+        
+        */
+       /* let obj1 = {
+            name: "Hoa ",
+            infor: {
+                address: "Hà Nội"
+            }
+        }
+        let obj2=JSON.parse(JSON.stringify(obj1));
+        obj1.infor.address="Hồ Chí Minh";
+        console.log(obj2);
+        let obj ={
+            name:"Liên"
+        }
+        let obj22={
+            age:18
+        }
+        let newobj=Object.assign({},obj,obj22);
+        console.log(newobj); */
+        let array=[
+            {
+                name:"Hoa",
+                id:1
+            },
+            {
+                name:"Hoa",
+                id:2
+            },
+            {
+                name:"lan",
+                id:3
+            }
+        ]
+      /*   let resual=[]
+        for (i=0; i<array.length; i++){
+            if(array[i].name=="Hoa"){
+                resual.push(array[i])
+            }
+        }
+        console.log(resual); */
+     /*    let result=array.filter((item, index,arr)=>{
+            console.log("item",item);
+            console.log("item", index);
+            console.log("item", arr);
+            return item.name =="Hoa";
+        })
+        console.log(resual); */
+        /* let resual=array.filter(function name(a,b) {
+            console.log(a);
+        }) */
+        let resual=array.filter((item)=>{
+            return
+        })
+    </script>
+</body>
+
+</html>
